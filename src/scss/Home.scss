@@ -1,0 +1,135 @@
+$boxShadow: inset 0 0 9px rgb(27 66 101);
+
+.home {
+  margin-top: 0;
+  background-image: url('../assets/bg1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  .colleft {
+    display: flex;
+    justify-content: right;
+  }
+
+  #tsparticles {
+    position: absolute;
+    top: 0;
+    // left: 0;
+    bottom: 0;
+    // right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 0
+  }
+
+  .homeRow {
+    padding-top: 150px;
+  }
+
+
+  .profile {
+    // background: radial-gradient(#3f6282, transparent);
+    background-image: url(../assets/profile.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    box-shadow: $boxShadow;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    animation: right-mover 1s ease-in-out infinite alternate;
+
+
+    @keyframes right-mover {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-10px);
+      }
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .profile img {
+      height: 100%;
+    }
+  }
+
+  .buttonResume {
+
+    font-size: 20px;
+    background: transparent;
+    color: black;
+    border-color: #6b8aa0;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 15px 15px;
+    box-shadow: $boxShadow;
+    position: relative;
+  }
+  .buttonResume:hover{
+    background: #afc6d4;
+  }
+  .buttonResume:focus {
+    background: #6b8aa0;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  .home {
+    padding-top: 200px;
+  }
+
+  .col {
+    h1 {
+      font-size: 2.5rem !important;
+    }
+
+    h2 {
+      font-size: 2rem !important;
+    }
+  }
+
+  .profile {
+    height: 350px !important;
+    width: 350px !important;
+  }
+
+  .homeRow {
+    .col {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .profile {
+    height: 350px !important;
+    width: 350px !important;
+    margin: auto;
+
+  }
+
+  @media (max-width: 1199.98px) {
+    .profile {
+      height: 350px !important;
+      width: 350px !important;
+    }
+
+    .col {
+      h1 {
+        font-size: 2.5rem !important;
+      }
+
+      h2 {
+        font-size: 2rem !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+$fontFamily: 'Eudoxus Sans,sans-serif' !important;
+$fontColor: #000 !important;
+$headingAlign: center;
+$headingPadding: 30px;
+$boxShadow: inset 0 0 9px rgb(27 66 101);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  section{
+    min-height: 100vh;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #ffffff;
+  color: $fontColor; 
+  font-family: $fontFamily;
+ 
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}

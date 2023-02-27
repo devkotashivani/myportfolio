@@ -1,0 +1,42 @@
+@import '../App.scss';
+
+.contact {
+    background-color: rgb(191 203 212);
+
+    h1 {
+        text-align: $headingAlign;
+        padding-bottom: $headingPadding;
+    }
+
+    .contactForm {
+
+        padding-top: 30px;
+        padding-bottom: 30px;
+        box-shadow: $boxShadow;
+
+        .formGroup {
+            padding: 0 30px 0 30px;
+        }
+
+        .button {
+            margin-left: 30px;
+            text-align: right;
+            background: #afc6d4;
+            color: black;
+            border-color: #6b8aa0;
+            box-shadow: $boxShadow;
+        }
+
+    }
+
+    .textarea {
+        resize: none;
+    }
+    .contactImg{
+        img{
+            margin: auto;
+            
+        }
+        
+    }
+}

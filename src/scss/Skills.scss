@@ -1,0 +1,47 @@
+@import '../App.scss';
+
+.skill {
+    padding: 50px 0 50px 0;
+    .heading{
+        text-align: $headingAlign;
+        padding-bottom: $headingPadding;
+    }
+    .frontCard{
+        float: right;
+        height: 360px;
+        
+    }
+    .cardBox{
+        height: 360px;
+    }
+    .skillCard{
+        border-color: #6b8aa0;
+        box-shadow: $boxShadow;
+    }
+    .card-title{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .list{
+        font-size: 18px;
+        font-weight: bold;
+        svg{
+            stroke: #6b8aa0;
+        }
+    }
+    .list .list-group-item{
+        border: none;
+    }
+    @media (max-width: 767.98px){
+        .frontCard{
+            float: none;
+            margin: auto;
+        }
+        .cardBox{
+            margin: auto;
+        }
+    }
+  }
